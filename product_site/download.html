@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="help.html">Help</a></li>
-    </ul>
+    
+    <div class="navigation">
+        <div id="container">
+            <a href="index.html" class="nav-option" target="_blank">Home</a>
+            <a href="download.html" class="nav-option" id="download-page" target="_blank">Download</a>
+            <a href="help.html" class="nav-option" target="_blank">Help</a>
+        </div>
+    </div>
 
     <img src="images/download.png" alt="download icon">
 
@@ -21,7 +25,7 @@
     </p>
     <hr>
 
-    <table>
+    <table id="requirements">
         <tr>
             <th>Requirements</th>
             <th>Minimum</th>
@@ -39,55 +43,45 @@
         </tr>
     </table>
 
-    <table>
-        <tr>
-            <th>Windows</th>  
-        </tr>
-        <tr>
-            <th>MacOS</th>  
-        </tr>
-        <tr>
-            <th>Linux</th>  
-        </tr>
-        <tr>
-            <th>Android</th>  
-        </tr>
-        <tr>
-            <th>IOS</th>  
-        </tr>
-    </table>
+    <div id="requirement-box">
+        <button type="button" class="requirement-option" name="Windows">Windows</button>
+        <button type="button" class="requirement-option" name="MacOS">MacOS</button>
+        <button type="button" class="requirement-option" name="Linux">Linux</button>
+        <button type="button" class="requirement-option" name="Android">Android</button>
+        <button type="button" class="requirement-option" name="IOS">IOS</button>
+    </div>
 
     <hr>
 
-    <div>
+    <div class="boxes">
         <div>
             <h2>Download for windows</h2>
             <p>Winodws installer</p>
             <p>Winodws installer</p>
         </div>
     </div>
-    <div>
+    <div class="boxes">
         <div>
             <h2>Download for MacOS</h2>
             <p>MacOS installer</p>
             <p>MacOS installer</p>
         </div>
     </div>
-    <div>
+    <div class="boxes">
         <div>
             <h2>Download for Linux</h2>
             <p>Linux installer</p>
             <p>Linux installer</p>
         </div>
     </div>
-    <div>
+    <div class="boxes">
         <div>
             <h2>Download for Android</h2>
             <p>Android installer</p>
             <p>Android installer</p>
         </div>
     </div>
-    <div>
+    <div class="boxes">
         <div>
             <h2>Download for IOS</h2>
             <p>IOS installer</p>
