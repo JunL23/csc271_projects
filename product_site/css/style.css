@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(245, 245, 220);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Georgia, Verdana;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Times New Roman', Georgia, Verdana;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.navigation {
+    border: 1px black solid;
+    background-color:rgb(69, 101, 69);
+}
+
+.nav-option {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-option:visited {
+    color: rgb(215, 215, 215);
+}
+
+.nav-option:hover {
+    color: black;
+}
+
+#container {
+    text-align: right;
+}
+
+#requirements {
+    border: 1px black solid;
+    display: inline-block;
+}
+
+#requirement-box {
+    display: inline-block;
+}
+
+.requirement-option {
+    display: block;
+    background-color: white;
+    width: 70px;
+}
+
+.boxes {
+    border: 2px black solid;
+    display: inline-block;
+}
+
+#current-page {
+    color:black;
+    background-color:gray;
+}
+
+
+
