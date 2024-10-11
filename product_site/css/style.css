@@ -43,10 +43,6 @@ pre {
     color: black;
 }
 
-#container {
-    text-align: right;
-}
-
 #requirements {
     border: 1px black solid;
     display: inline-block;
@@ -95,6 +91,15 @@ pre {
 #submit {
     border-radius: 5px;
     background-color: blanchedalmond;
+}
+
+.boxes {
+    width: 25%;
+    margin: 20px;
+}
+
+.boxes p {
+    border: 1px solid black;
 }
 
 #pic1 {
