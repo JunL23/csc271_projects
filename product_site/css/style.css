@@ -71,7 +71,7 @@ pre {
 .main-content {
     float: left;
     width: 100%;
-    padding: 5px;
+    padding: 7px;
     text-align: center;
 }
 
@@ -94,8 +94,10 @@ pre {
 }
 
 .boxes {
-    width: 25%;
     margin: 20px;
+    overflow: auto;
+    width: 20%;
+    height: 250px;
 }
 
 .boxes p {
