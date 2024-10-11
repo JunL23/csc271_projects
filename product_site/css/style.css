@@ -94,9 +94,10 @@ pre {
 }
 
 .boxes {
-    margin: 20px;
     overflow: auto;
-    width: 20%;
+    margin-top: 20px;
+    margin-right: 11px;
+    width: 31%;
     height: 250px;
 }
 
