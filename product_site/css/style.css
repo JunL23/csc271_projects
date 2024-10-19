@@ -24,7 +24,8 @@ pre {
     border: 1px black solid;
     background-color:rgb(69, 101, 69);
     overflow: hidden;
-    padding: 5px;
+    padding: 2px;
+    text-align: left;
 }
 
 .nav-option {
@@ -35,6 +36,10 @@ pre {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.navigation img {
+    height: 34px;
+}
+
 .nav-option:visited {
     color: rgb(215, 215, 215);
 }
@@ -43,7 +48,15 @@ pre {
     color: black;
 }
 
-#requirements {
+.nav-option:active {
+    color: gold;
+}
+
+#requirements, th, td {
+    border: 1px black solid;
+}
+
+#device-requirement{
     border: 1px black solid;
     display: inline-block;
 }
@@ -58,11 +71,6 @@ pre {
     width: 70px;
 }
 
-.boxes {
-    border: 2px black solid;
-    display: inline-block;
-}
-
 #current-page {
     color:black;
     background-color:gray;
@@ -73,6 +81,17 @@ pre {
     width: 100%;
     padding: 7px;
     text-align: center;
+}
+
+#pic1 {
+    float: right;
+    width: auto;
+}
+
+.main-box {
+    border: 1px solid black;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 #suggestion {
@@ -94,10 +113,12 @@ pre {
 }
 
 .boxes {
+    border: 2px black solid;
+    display: inline-block;
     overflow: auto;
     margin-top: 20px;
     margin-right: 11px;
-    width: 31%;
+    width: 200px;
     height: 250px;
 }
 
@@ -105,12 +126,9 @@ pre {
     border: 1px solid black;
 }
 
-#pic1 {
-    float: right;
-}
 
 #pic2 {
-    float: left;
+    float: right;
 }
 
 @media only screen and (max-width: 600px) {

@@ -22,6 +22,11 @@ p {
     border: 1px black solid;
     background-color:rgb(69, 101, 69);
     padding: 2px;
+    text-align: left;
+}
+
+.header img {
+    height: 34px;
 }
 
 .nav-option {
@@ -36,8 +41,16 @@ p {
     background-color:gray;
 }
 
+.nav-option:visited {
+    color: rgb(215, 215, 215);
+}
+
 .nav-option:hover {
     color: black;
+}
+
+.nav-option:active {
+    color: gold;
 }
 
 #main {
