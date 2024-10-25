@@ -131,6 +131,23 @@ pre {
     float: right;
 }
 
+#calculation-form {
+    text-align: center;
+}
+
+#calculation-submit {
+    border-radius: 10px;
+    height: 30px;
+}
+
+#calculation-submit:hover {
+    background-color: gray;
+}
+
+#calculation-submit:active {
+    color: gold;
+}
+
 @media only screen and (max-width: 600px) {
     .navigation a {
       float: none;
