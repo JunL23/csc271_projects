@@ -34,11 +34,11 @@ submit_button.onclick = () => {
         first_time_user = false;
     }
     
-    total = (classnum * price).toFixed(2);
-
-    
     if(first_time_user == true){
-        total += first_time_fee;
+        total = ((classnum * price) + first_time_fee).toFixed(2);
+    }
+    else{
+        total = (classnum * price).toFixed(2);
     }
     
     calculation_message[0].textContent = "Hello " + user_name + ".";
