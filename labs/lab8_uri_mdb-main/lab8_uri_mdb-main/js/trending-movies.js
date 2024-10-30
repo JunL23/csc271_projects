@@ -18,7 +18,7 @@ var links = ["https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%2
 	, "https://cdn.wikimg.net/en/strategywiki/images/9/95/Home_Alone_snes_manual.jpg",
 	"https://th.bing.com/th/id/R.25ff8011460c45c1915622098ef31414?rik=l9Xi%2fCHM%2baB7fQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fen%2f1%2f1c%2fThe_Dark_Knight_(2008_film).jpg&ehk=iubdcJ2MUAHOhWSUsi65QSdOqO30TPuZ3ofEMSik37I%3d&risl=&pid=ImgRaw&r=0"
 ];
-var html_link = ["dune.html", "#", "#"];
+var html_link = ["dune.html", "https://nroy0703.rhody.dev/csc271_projects/labs/lab8_uri_mdb-main/lab8_uri_mdb-main/home-alone.html", "https://keremerkmen.rhody.dev/lab8_uri_mdb-main/the-dark-knight.html"];
 
 var rating = [3, 4, 5];
 
