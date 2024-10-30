@@ -61,7 +61,7 @@ for(i = 0; i < review_card.length; i++){
 		}
 	}
 
-	temp.textcontent += t;
+	temp.textContent = t;
 
 	temp.setAttribute('data-rating', rate[i]);
 
