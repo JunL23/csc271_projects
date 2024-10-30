@@ -57,7 +57,7 @@ for(var i = 0; i < movie_card.length; i++){
 	cards.querySelector('.movie-image').src = links[i];
 	cards.querySelector('.movie-image').alt = movies[i];
 
-	cards.querySelector('.movie-link').src = html_link[i];
+	cards.querySelector('.movie-link').href = html_link[i];
 	cards.querySelector('.movie-link').textContent = movies[i];
 
 	var rate = cards.querySelector('div.rating');
