@@ -148,6 +148,29 @@ pre {
     color: gold;
 }
 
+.e-input {
+    display: table;
+}
+
+#eligibility {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+#calculator {
+    border: 1px solid black;
+}
+
+#GPA {
+    display: none;
+}
+
+#income {
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     .navigation a {
       float: none;

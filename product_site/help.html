@@ -54,36 +54,66 @@
 
         <hr>
 
-        <form id="calculation-form">
+        <div id="calculator">
             <h2>Cost calculator</h2>
             <h4>This calculator provides the cost of using the service of the app, including the service of receiving 
                 notification for available seats in the course, and other fees as well.</h4>
-            <div>
-                <label><pre>Name:           </pre>
-                    <input class="calculation" type="text" name="name" placeholder="Jam" required>
-                </label>
-            </div>
-            <div>
-                <label><pre>#Classes:       </pre>
-                    <input class="calculation" type="text" name="classes" placeholder="1" required>
-                </label>
-            </div>
-            <div>
-                <label><pre>First time user:</pre>
-                    <input class="calculation" type="text" name="first-time" placeholder="Yes" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input id="calculation-submit" type="button" name="submit calculation" value="Get cost">
-                </label>
-            </div>
-            
-            <p class="calculation-message"></p>
-            <p class="calculation-message"></p>
-        </form>
+            <form id="calculation-form">
+                <div>
+                    <label><pre>Name:           </pre>
+                        <input class="calculation" type="text" name="name" placeholder="Jam" required>
+                    </label>
+                </div>
+                <div>
+                    <label><pre>#Classes:       </pre>
+                        <input class="calculation" type="text" name="classes" placeholder="1" required>
+                    </label>
+                </div>
+                <div>
+                    <label><pre>First time user:</pre>
+                        <input class="calculation" type="text" name="first-time" placeholder="Yes" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input id="calculation-submit" type="button" name="submit calculation" value="Get cost">
+                    </label>
+                </div>
+                
+                <p class="calculation-message"></p>
+                <p class="calculation-message"></p>
+            </form>
 
-        <hr>
+            <hr>
+
+            <div id="eligibility">
+                <h2>Eligibility calculator</h2>
+                <h4>This calculator tells you if you are eleigible to a disocunt of our app services</h4>
+                <form id="table-container">
+                    <label id="college_year" class="e-input"><strong>Are you a college freshman:</strong>
+                        <input id="year-yes" type="radio" name = "year" class="e-button" value="yes">Yes
+                        <input id="year-no" type="radio" name = "year" class="e-button" value="no">No
+                    </label>
+                    <br>
+                    <label id="time" class="e-input"><strong>First time app user:</strong>
+                        <input id="time-yes" type="radio" name = "first" class="e-button" value="yes">Yes
+                        <input id="time-no" type="radio" name = "first" class="e-button" value="no">No
+                    </label>
+                    <br>
+                    <label id="GPA" class="e-input"><strong>What is your GPA:</strong>
+                        <input id="gpa-yes" type="radio" name = "gpa" class="e-button" value="grade_more">Above or equal to 3.0
+                        <input id="gpa-no" type="radio" name = "gpa" class="e-button" value="grade_less">Below 3.0
+                    </label>
+                    <br>
+                    <label id="income" class="e-input"><strong>What is your income (per year):</strong>
+                        <input id="income-yes" type="radio" name = "year_income" class="e-button" value="more">More than $70,000
+                        <input id="income-no" type="radio" name = "year_income" class="e-button" value="less">Less than $70,000
+                    </label>
+                </form>
+                <h3 id="comments"></h3>
+            </div>
+        </div>
+        
 
         <h2>Contact us!</h2>
         <p>If you still have question that you are unsure of, please contact us using
@@ -115,5 +145,6 @@
     </form>
 </div>
     <script src="js/simple_script.js"></script>
+    <script src="js/decision.js"></script>
 </body>
 </html>
