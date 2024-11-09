@@ -26,9 +26,13 @@ var count_message = document.querySelector("#count");
 // Function to check if use is using the app for the first time
 function First_time_user(){
     var first_time_user;
+
+    // If true, set the first_time_user to true
     if(input[2].value.toLowerCase() == "yes"){
         first_time_user = true;
     }
+
+    // Else, set it to false
     else{
         first_time_user = false;
     }
@@ -38,13 +42,17 @@ function First_time_user(){
 
 // Function to display the message based on user input
 function display_message(username, class_num, user_app_experience){
+
+    // Check if user is using the app for the first time, if so, add an extra fee
     if(user_app_experience == true){
         total = ((class_num * price) + first_time_fee).toFixed(2);
     }
+    // If not, do not add extra fee
     else{
         total = (class_num * price).toFixed(2);
     }
     
+    // Update the messages
     calculation_message[0].textContent = "Hello " + username + ".";
     calculation_message[1].innerHTML = "Based on the information you provided, the total cost will be " + "<strong>" + "$" + total + "</strong>" + ".";
 }
