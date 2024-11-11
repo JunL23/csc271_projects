@@ -24,6 +24,8 @@ var count_button = document.querySelector("#submit");
 var count_message = document.querySelector("#count");
 
 // Function to check if use is using the app for the first time
+// There is no parameter
+// It is expected to return a true/false value to show if a user is using the app fo the first time
 function First_time_user(){
     var first_time_user;
 
@@ -41,6 +43,9 @@ function First_time_user(){
 }
 
 // Function to display the message based on user input
+// The parameter is the name of the user(string), the number of class they want to check(int), 
+// and if they are using the app for the first time(boolean)
+// The function is expected to update the message with these parameters
 function display_message(username, class_num, user_app_experience){
 
     // Check if user is using the app for the first time, if so, add an extra fee
@@ -58,6 +63,8 @@ function display_message(username, class_num, user_app_experience){
 }
 
 // Display message showing how many times user have submitted a suggestion
+// It does not have any parameter or returns
+// The function is intend to keep count of the number of suggestions a user have sent and update the message accordingly
 function count_number(){
     count ++;
     count_message.textContent = "Thank you for your suggestions, you have submitted " + count + " suggestions.";
