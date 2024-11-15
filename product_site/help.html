@@ -122,30 +122,32 @@
         </p>
     <form action="help.html" id="suggestion">
         <label><pre>Email:  </pre>
-            <input class="textinput" type="text" name="email" placeholder="example@gmail.com" required>
+            <input class="textinput" id="email" type="text" name="email" placeholder="example@gmail.com" required>
         </label>
         <br>
         
         <label><pre>Name:   </pre>
-            <input class="textinput" type="text" name="Name" placeholder="Jon" required>
+            <input class="textinput" id="name" type="text" name="Name" placeholder="Jon" required>
         </label>
         <br>
 
         <label><pre>Reason: </pre>
-            <textarea name="reason" placeholder="Please enter your reason of sending this message" required></textarea>
+            <textarea name="reason" id="reason" placeholder="Please enter your reason of sending this message" required></textarea>
         <br>
         </label>
         <label><pre>Message:</pre>
-            <input class="textinput" type="text" name="message" placeholder="Please enter your message here" required>
+            <textarea class="textinput" id="message" type="text" name="message" placeholder="Please enter your message here (less than 300 characters)" required></textarea>
         <br>
         </label>
         
-        <p id="submit-message"></p>
-        <input id="submit" type="button" name="submit message" value="Submit">
+        <!-- <p id="submit-message"></p> -->
         <p id="count"></p>
+        <input id="submit" type="submit" name="submit message" value="Submit">
+        <p id="feedback"></p>
     </form>
 </div>
     <script src="js/simple_script.js"></script>
     <script src="js/decision.js"></script>
+    <script src="js/event_listener.js"></script>
 </body>
 </html>
