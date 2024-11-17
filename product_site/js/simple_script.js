@@ -65,10 +65,10 @@ function display_message(username, class_num, user_app_experience){
 // Display message showing how many times user have submitted a suggestion
 // It does not have any parameter or returns
 // The function is intend to keep count of the number of suggestions a user have sent and update the message accordingly
-function count_number(){
-    count ++;
-    count_message.textContent = "Thank you for your suggestions, you have submitted " + count + " suggestions.";
-}
+// function count_number(){
+//     count ++;
+//     count_message.textContent = "Thank you for your suggestions, you have submitted " + count + " suggestions.";
+// }
 
 
 // When the submit button of the claculator is clicked, store the value of the textfields into the variables, and display a message telling the user the cost
@@ -84,9 +84,9 @@ submit_button.onclick = () => {
 }
 
 // When user clicks the submit button on the help page, call the count_number function
-count_button.onclick = () => {
-    count_number();
-}
+// count_button.onclick = () => {
+//     count_number();
+// }
 
 
 
