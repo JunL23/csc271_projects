@@ -56,7 +56,7 @@ email.addEventListener('blur', function(){
 
 // Function to display updated message when user click into the name text field
 function name_initial(){
-    feedback.textContent = 'Please enter your name.';
+    feedback.textContent = 'Please enter your name (first name or full name).';
 }
 
 // Function to display updated message (based on different criteria) when user leave the name text field
@@ -108,7 +108,7 @@ reason.addEventListener('blur', function(){
 
 // Function to display updated message when user click into the message text field
 function message_initial(){
-    feedback.textContent = 'Please enter the your message.';
+    feedback.textContent = 'Please enter the your message (less than 300 characters).';
 }
 
 // Function to display updated message (based on different criteria) when user leave the message text field
