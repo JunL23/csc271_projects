@@ -135,8 +135,9 @@ p {
 .like {
     bottom: 2%;
     position: absolute;
-    right: 20%;
+    right: 25%;
     display: inline-block;
+    margin-right: 15px;
 }
 
 .like:hover {
