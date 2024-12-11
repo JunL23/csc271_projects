@@ -25,7 +25,7 @@ var income_no_container = document.querySelector('#income-no-container');
 // var eligible_message = document.querySelector('#comments');
 var eligible_message = document.createElement('h3');
 eligible_message.id = 'comments';
-eligible_message.textContent = '';
+eligible_message.textContent = 'Please select the option that applies to you';
 
 var message_container = document.querySelector('#eligibility');
 message_container.append(eligible_message);
