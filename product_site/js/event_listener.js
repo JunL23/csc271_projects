@@ -3,7 +3,7 @@ var feedback = document.querySelector('#feedback');
 var email = document.querySelector('#email');
 var email_valid = false
 
-var username = document.querySelector('#name');
+var username = document.querySelector('#username');
 var name_valid = false;
 
 var reason = document.querySelector('#reason');

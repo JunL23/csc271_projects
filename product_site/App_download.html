@@ -15,23 +15,26 @@
 
     <div class="navigation">
         <img src="images/logo.png" alt="logo image">
-        <a href="help.html" class="nav-option">Help</a>
-        <a href="App_news.html" class="nav-option">News</a>
-        <a href="App_download.html" class="nav-option" id="current-page">Download</a>
-        <a href="index.html" class="nav-option">Home</a>
+        <nav id="nav-container">
+            <a href="index.html" class="nav-option">Home</a>
+            <a href="App_download.html" class="nav-option" id="current-page">Download</a>
+            <a href="App_news.html" class="nav-option">News</a>
+            <a href="help.html" class="nav-option">Help</a>
+        </nav>
     </div>
 
     <br>
 
-    <img src="images/download.png" alt="download icon">
-
-    <h1>App Download</h1>
-    <p>Download the app that brings you a great experience and eye appealing design.
-       This app is the only many in one app that you need for college course planning.
-       Give it a try, you will like it! The following downloads are the most recent version of the app in different systems. 
-    </p>
-    <hr>
     <div class="main-content">
+        <img src="images/download.png" alt="download icon">
+
+        <h1>App Download</h1>
+        <p>Download the app that brings you a great experience and eye appealing design.
+        This app is the only many in one app that you need for college course planning.
+        Give it a try, you will like it! The following downloads are the most recent version of the app in different systems. 
+        </p>
+        <hr>
+        
         <table id="device-requirement">
             <tr>
                 <th>Requirements</th>
@@ -40,22 +43,22 @@
             </tr>
             <tr>
                 <th>Ram</th>
-                <td>1 GB</td>
-                <td>2 GB</td>
+                <td id="ram_minimum_requirement">1 GB</td>
+                <td id="ram_maximum_requirement">2 GB</td>
             </tr>
             <tr>
                 <th>Free space</th>
-                <td>2 GB</td>
-                <td>3 GB</td>
+                <td id="space_minimum_requirement">2 GB</td>
+                <td id="space_maximum_requirement">3 GB</td>
             </tr>
         </table>
 
         <div id="requirement-box">
-            <button type="button" class="requirement-option" name="Windows">Windows</button>
-            <button type="button" class="requirement-option" name="MacOS">MacOS</button>
-            <button type="button" class="requirement-option" name="Linux">Linux</button>
-            <button type="button" class="requirement-option" name="Android">Android</button>
-            <button type="button" class="requirement-option" name="IOS">IOS</button>
+            <button type="button" class="requirement-option" name="Windows" id="Windows">Windows</button>
+            <button type="button" class="requirement-option" name="MacOS" id="MacOS">MacOS</button>
+            <button type="button" class="requirement-option" name="Linux" id="Linux">Linux</button>
+            <button type="button" class="requirement-option" name="Android" id="Android">Android</button>
+            <button type="button" class="requirement-option" name="IOS" id="IOS">IOS</button>
         </div>
 
         <hr>
@@ -71,9 +74,8 @@
                 </ol>
             </div>
         </div>
-
-        <hr>
-
+        <br>
+        
         <div class="boxes">
             <div>
                 <h2>Download for windows</h2>
@@ -112,5 +114,6 @@
     </div>
 
     <script src="js/instruction_loop.js"></script>
+    <script src="js/requirement.js"></script>
 </body>
 </html>

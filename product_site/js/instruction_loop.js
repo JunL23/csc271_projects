@@ -1,9 +1,9 @@
 // Create instruction for each download method
-var windows = ['Download windows installer on the website.', 'Follow the installer prompt.', 'You can now use the app!'];
-var mac = ['Download MacOS installer on the website.', 'Follow the installer prompt and add path variable.', 'You can now use the app!'];
-var linux = ['Download Linux installer on the website.', 'Follow the installer prompt and type in command on terminal.', 'You can now use the app!'];
-var android = ['Download Android installer on the website.', 'Follow the installer prompt.', 'You can now use the app on phone!'];
-var ios = ['Download IOS installer on the website.', 'Follow the installer prompt.', 'You can now use the app on phone!'];
+var windows_list = ['Download windows installer on the website.', 'Follow the installer prompt.', 'You can now use the app!'];
+var mac_list = ['Download MacOS installer on the website.', 'Follow the installer prompt and add path variable.', 'You can now use the app!'];
+var linux_list = ['Download Linux installer on the website.', 'Follow the installer prompt and type in command on terminal.', 'You can now use the app!'];
+var android_list = ['Download Android installer on the website.', 'Follow the installer prompt.', 'You can now use the app on phone!'];
+var ios_list = ['Download IOS installer on the website.', 'Follow the installer prompt.', 'You can now use the app on phone!'];
 
 var installer = document.querySelectorAll('.boxes');
 var windows_installer = installer[0];
@@ -36,25 +36,25 @@ function install(system_name, instruction_list){
 
 // If winodws download is pressed
 windows_installer.addEventListener('click', () => {
-    install("Windows", windows);
+    install("Windows", windows_list);
 })
 
 // If MacOS download is pressed
 mac_installer.addEventListener('click', () => {
-    install("MacOS", mac);
+    install("MacOS", mac_list);
 })
 
 // If Linux download is pressed
 linux_installer.addEventListener('click', () => {
-    install("Linux", linux);
+    install("Linux", linux_list);
 })
 
 // If android download is pressed
 android_installer.addEventListener('click', () => {
-    install("Android", android);
+    install("Android", android_list);
 })
 
 // If IOS download is pressed
 ios_installer.addEventListener('click', () => {
-    install("IOS", ios);
+    install("IOS", ios_list);
 })

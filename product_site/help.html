@@ -15,18 +15,24 @@
 
     <div class="navigation">
         <img src="images/logo.png" alt="logo of the product">
-        <a href="help.html" class="nav-option" id="current-page">Help</a>
+        <!-- <a href="help.html" class="nav-option" id="current-page">Help</a>
         <a href="App_news.html" class="nav-option">News</a>
         <a href="App_download.html" class="nav-option">Download</a>
-        <a href="index.html" class="nav-option">Home</a>
+        <a href="index.html" class="nav-option">Home</a> -->
+        <nav id="nav-container">
+            <a href="index.html" class="nav-option">Home</a>
+            <a href="App_download.html" class="nav-option">Download</a>
+            <a href="App_news.html" class="nav-option">News</a>
+            <a href="help.html" class="nav-option" id="current-page">Help</a>
+        </nav>
     </div>
 
-    <h1>Help</h1>
-
-    <img src="images/notification.png" alt="picture of a course seat available notification on phone">
-    <br>
-
     <div class="main-content">
+        <h1>Help</h1>
+
+        <img src="images/notification.png" alt="picture of a course seat available notification on phone">
+        <br>
+        
         <h2>FAQ</h2>
         <table id="requirements">
             <tr>
@@ -60,24 +66,25 @@
                 notification for available seats in the course, and other fees as well.</h4>
             <form id="calculation-form">
                 <div>
-                    <label><pre>Name:           </pre>
-                        <input class="calculation" type="text" name="name" placeholder="Jam" required>
+                    <label for="name"><strong class="cost_calculator_component">Name:               </strong>
+                        <input class="calculation" type="text" id="name" name="name" placeholder="Jam" required>
                     </label>
                 </div>
+                <br>
                 <div>
-                    <label><pre>#Classes:       </pre>
-                        <input class="calculation" type="text" name="classes" placeholder="1" required>
+                    <label for="classes"><strong class="cost_calculator_component">#Classes:           </strong>
+                        <input class="calculation" type="text" id="classes" name="classes" placeholder="1" required>
                     </label>
                 </div>
+                <br>
                 <div>
-                    <label><pre>First time user:</pre>
-                        <input class="calculation" type="text" name="first-time" placeholder="Yes" required>
+                    <label for="first-time"><strong class="cost_calculator_component">First time user:</strong>
+                        <input class="calculation" type="text" id="first-time" name="first-time" placeholder="Yes" required>
                     </label>
                 </div>
+                <br>
                 <div>
-                    <label>
-                        <input id="calculation-submit" type="button" name="submit calculation" value="Get cost">
-                    </label>
+                    <input id="calculation-submit" type="button" name="submit calculation" value="Get cost">
                 </div>
                 
                 <p class="calculation-message"></p>
@@ -90,27 +97,49 @@
                 <h2>Eligibility calculator</h2>
                 <h4>This calculator tells you if you are eleigible to a disocunt of our app services</h4>
                 <form id="table-container">
-                    <label id="college_year" class="e-input"><strong>Are you a college freshman:</strong>
+                    <label id="college_year" class="e-input"><strong>Are you a college freshman:</strong></label>
+
+                    <label for="year-yes">
                         <input id="year-yes" type="radio" name = "year" class="e-button" value="yes">Yes
+                    </label>
+
+                    <label for="year-no">
                         <input id="year-no" type="radio" name = "year" class="e-button" value="no">No
                     </label>
                     <br>
-                    <label id="time" class="e-input"><strong>First time app user:</strong>
+
+                    <label id="time" class="e-input"><strong>First time app user:</strong></label>
+
+                    <label for="time-yes">
                         <input id="time-yes" type="radio" name = "first" class="e-button" value="yes">Yes
+                    </label>
+
+                    <label for="time-no">
                         <input id="time-no" type="radio" name = "first" class="e-button" value="no">No
                     </label>
                     <br>
-                    <label id="GPA" class="e-input"><strong>What is your GPA:</strong>
+
+                    <label id="GPA" class="e-input"><strong>What is your GPA:</strong></label>
+
+                    <label for="gpa-yes" id="gpa-yes-container">
                         <input id="gpa-yes" type="radio" name = "gpa" class="e-button" value="grade_more">Above or equal to 3.0
+                    </label>
+
+                    <label for="gpa-no" id="gpa-no-container">
                         <input id="gpa-no" type="radio" name = "gpa" class="e-button" value="grade_less">Below 3.0
                     </label>
                     <br>
-                    <label id="income" class="e-input"><strong>What is your income (per year):</strong>
+
+                    <label id="income" class="e-input"><strong>What is your income (per year):</strong></label>
+
+                    <label for="income-yes" id="income-yes-container">
                         <input id="income-yes" type="radio" name = "year_income" class="e-button" value="more">More than $70,000
-                        <input id="income-no" type="radio" name = "year_income" class="e-button" value="less">Less than $70,000
                     </label>
+                    
+                    <label for="income-no" id="income-no-container">
+                        <input id="income-no" type="radio" name = "year_income" class="e-button" value="less">Less than $70,000
+                    </label>                    
                 </form>
-                <h3 id="comments"></h3>
             </div>
         </div>
         
@@ -120,31 +149,39 @@
             the form below. We welcome any messages, inquires, problems, suggestions or
             even a casual hello! We will provide as much as assistence as we can. We will like to see your messages!
         </p>
-    <form action="help.html" id="suggestion">
-        <label><pre>Email:  </pre>
-            <input class="textinput" id="email" type="text" name="email" placeholder="example@gmail.com">
-        </label>
-        <br>
         
-        <label><pre>Name:   </pre>
-            <input class="textinput" id="name" type="text" name="Name" placeholder="Jon">
-        </label>
-        <br>
+        <form action="help.html" id="suggestion">
+            <br>
 
-        <label><pre>Reason: </pre>
-            <textarea name="reason" id="reason" placeholder="Please enter your reason of sending this message"></textarea>
-        <br>
-        </label>
-        <label><pre>Message:</pre>
-            <textarea class="textinput" id="message" type="text" name="message" placeholder="Please enter your message here (less than 300 characters)"></textarea>
-        <br>
-        </label>
-        
-        <!-- <p id="submit-message"></p> -->
-        <!-- <p id="count"></p> -->
-        <input id="submit" type="submit" name="submit message" value="Submit">
-        <p id="feedback"></p>
-    </form>
+            <label><strong class="cost_calculator_component">Email:     </strong>
+                <input class="textinput" id="email" type="text" name="email" placeholder="example@gmail.com">
+            </label>
+            <br>
+            <br>
+
+            <label><strong class="cost_calculator_component">Name:     </strong>
+                <input class="textinput" id="username" name="Name" placeholder="Jon">
+            </label>
+            <br>
+            <br>
+
+            <label><strong class="cost_calculator_component">Reason:  </strong>
+                <textarea name="reason" id="reason" placeholder="Please enter your reason of sending this message"></textarea>
+            </label>
+            <br>
+            <br>
+
+            <label><strong class="cost_calculator_component">Message:</strong>
+                <textarea class="textinput" id="message" name="message" placeholder="Please enter your message here (less than 300 characters)"></textarea>
+            </label>
+            <br>
+            <br>
+            
+            <!-- <p id="submit-message"></p> -->
+            <!-- <p id="count"></p> -->
+            <input id="submit" type="submit" name="submit message" value="Submit">
+            <p id="feedback"></p>
+        </form>
 </div>
     <script src="js/simple_script.js"></script>
     <script src="js/decision.js"></script>

@@ -29,11 +29,21 @@ p {
     height: 34px;
 }
 
-.nav-option {
+#nav-container {
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     float: right;
+    height: auto;
+}
+
+.nav-option {
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
 #active {
@@ -71,7 +81,7 @@ p {
 }
 
 .open-description {
-    color: white;
+    color: black;
 }
 
 #title-paragraph {
@@ -161,6 +171,12 @@ p {
       display: block;
       text-align: left;
     }
+    
+    #nav-container {
+        float: none;
+        display: block;
+    }
+
     .main{
       max-width: 100%;
       font-size: 24px;
@@ -169,7 +185,6 @@ p {
     .news-content {
         max-width: 100%;
     }
-
 
     img{
         max-width:100%;
